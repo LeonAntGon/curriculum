@@ -1,7 +1,7 @@
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { AnimatedSection } from "@/components/AnimatedSection";
+// import { AnimatedSection } from "@/components/AnimatedSection";
 import { EDUCATION, CERTIFICATIONS } from "@/lib/constants";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -9,7 +9,7 @@ import { ExternalLink } from "lucide-react";
 
 export function Education() {
   return (
-    <AnimatedSection id="education" className="py-20 container mx-auto">
+    <section id="education" className="py-20 container mx-auto">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold mb-12 text-center">Educación y Certificaciones</h2>
         
@@ -69,6 +69,6 @@ export function Education() {
           </div>
         </div>
       </div>
-    </AnimatedSection>
+    </section>
   );
 }
