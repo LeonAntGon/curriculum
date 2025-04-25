@@ -75,7 +75,7 @@ export function Navigation() {
                   key={item.name}
                   href={item.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-sm font-medium py-2 hover:text-primary transition-colors"
+                  className="text-sm font-medium py-2 hover:text-primary transition-colors pl-4"
                 >
                   {item.name}
                 </Link>
