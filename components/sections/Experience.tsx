@@ -8,11 +8,11 @@ import { motion } from "framer-motion";
 
 export function Experience() {
   return (
-    <AnimatedSection id="experience" className="py-20 bg-muted/40">
+    <AnimatedSection id="experience" className="py-20 bg-muted/40 overflow-hidden">
       <div className="container max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold mb-12 text-center">Experiencia Laboral</h2>
         
-        <div className="space-y-8">
+        <div className="space-y-8 overflow-hidden">
           {EXPERIENCE.map((exp, index) => (
             <motion.div
               key={index}
@@ -20,6 +20,7 @@ export function Experience() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true, amount: 0.3 }}
+              className="overflow-hidden"
             >
               <Card>
                 <div className="flex flex-col md:flex-row">
